@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Herb Finder</title>
+    </head>
+    
+
+        <style>
+            body {
+                background: url('/Lenos-Herb-finder/forest-background.jpg');
+                background-size: cover;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            #searchInput {
+                width: 300px;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                margin: 10px;
+            }
+            #searchButton {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            #searchButton:hover {
+                background-color: #45a049;
+            }
+
+            #herbResults {
+                margin: 20px;
+            }
+
+        </style>
+
+        <script src="Herbfinder.js"></script>
+
+        <body>
+            <h1>Lenosa's Herb finder</h1>
+            <input type="text" id="userInput" placeholder="Enter recipe name">
+            <button id="searchButton" onclick="searchRecipe()">Search</button>
+            <div id="herbResults"></div>
+    </body>
+</html>
